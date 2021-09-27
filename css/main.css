@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Share+Tech&display=swap');
+
+/* Reseteo de estilos y formato de HTML*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Estilos para el body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 8rem 1fr 7rem;
+    grid-row-gap: 1.5rem;
+}
+
+/* Estilos para el header */
+
+header {
+    width: 100vw;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+header .logo {
+    height: 5rem;
+    margin: 1rem 5rem;
+    transition: 0.3s;
+}
+
+header .logo:hover {
+    opacity: 0.6;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #162521;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header .navbar {
+    font-size: 2rem;
+}
+
+header .navbar-toggler-icon, .navbar-toggler {
+    transform: scale(1.1);
+}
+
+/* Estilos para el main */
+
+h2 {
+    font-size: 3.5rem !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500 !important;
+    color: #273E56 !important;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+label {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+address {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.imagen {
+    width: 50rem;
+}
+
+/* Estructura del main */
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    animation: aparicion 0.5s linear;
+}
+
+/* Estructura del Index */
+
+.index .indexSeccion1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 40% 40%;
+}
+
+.index .indexSeccion1 div .carousel {
+    width: 40vw;
+}
+
+.index .indexSeccion1 .indexSeccion1Imagen {
+    grid-column: 1;
+    grid-row: 1/4;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.index .indexSeccion1 div.indexSeccion1Texto {
+    grid-column: 2;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+}
+
+.index .indexSeccion1 div h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #273E56;
+}
+
+.index .indexSeccion1 div p {
+    margin: 1.5rem 1rem;
+    font-size: 1.8rem;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+.index .indexSeccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+    width: 80vw;
+    margin-top: 2rem;
+}
+
+.index .indexSeccion2 h2 {
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #273E56;
+
+}
+
+.imagenDiv {
+    height: 50%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.index .indexSeccion2 .indexSeccion2Parte1 {
+    grid-column: 1;
+    grid-row: 2/4;
+    overflow: hidden;
+}
+
+.index .indexSeccion2 .indexSeccion2Parte2 {
+    grid-column: 2;
+    grid-row: 2/4;
+    overflow: hidden;
+}
+
+.index .indexSeccion2 .indexSeccion2Parte3 {
+    grid-column: 3;
+    grid-row: 2/4;
+    overflow: hidden;
+}
+
+.index .indexSeccion2 p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+.index .indexSeccion2 img {
+    height: 100%;
+}
+
+/* Estructura de nosotros */
+
+main.nosotros .nosotrosSeccion1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img {
+    width: 40vw;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.nosotrosSeccion1Img img {
+    min-width: 40vw;
+}
+
+main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Texto {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.nosotrosSeccion1Texto h2 {
+    text-align: center;
+}
+
+.nosotrosSeccion1Texto p {
+    margin-top: 1rem;
+}
+
+main.nosotros .nosotrosSeccion2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+main.nosotros .nosotrosSeccion2 .nosotrosSeccion2Img {
+    width: 80vw;
+    height: 50vh;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+main.nosotros .nosotrosSeccion2 .nosotrosSeccion2Texto {
+    margin-top: 1.5rem;
+}
+
+.nosotrosSeccion2Texto h2 {
+    text-align: center;
+}
+
+.nosotrosSeccion2Img img {
+    min-width: 100%;
+}
+
+/* Estructura de productos */
+
+main.productos .productosSeccion1 {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    overflow: hidden;
+}
+
+main.productos .productosSeccion1 h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-self: center;
+}
+
+main.productos .productosSeccion1 p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main.productos .productosSeccion1 img {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 40vw;
+    align-self: center;
+}
+
+main.productos .productosSeccion2 {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main.productos .productosSeccion2 .tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+main.productos .productosSeccion2 .tarjetas .card {
+    width: 39.5vw;
+}
+
+main.productos .productosSeccion2 .tarjetas h5 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #273E56;
+}
+
+main.productos .productosSeccion2 .tarjetas li {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+/* Estructura de Clientes */
+
+main.clientes .clientesSeccion1 {
+    display: flex;
+    flex-direction: column;
+}
+
+main.clientes .clientesSeccion1 img {
+    max-width: 80vw;
+}
+
+main.clientes .clientesSeccion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+main.clientes .clientesSeccion2 .division1 {
+    display: flex;
+    flex-direction: row;
+}
+
+main.clientes .clientesSeccion2 .division2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.clientesSeccion2 img {
+    max-width: 40vw;
+}
+
+.division1 p {
+    margin-left: 1rem;
+}
+
+.division2 p {
+    margin-right: 1rem;
+}
+
+/* Estructura de Contacto */
+
+main.contacto {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 100%;
+    grid-column-gap: 1rem;
+    justify-items: center;
+}
+
+main.contacto .contactoSeccion1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+main.contacto .contactoSeccion2 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 40vw;
+}
+
+main.contacto .contactoSeccion2 form div label {
+    font-size: 1.8rem;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+}
+
+/* Estilos para el footer */
+
+footer {
+    background-color: rgba(215, 216, 216, 0.377);
+    grid-column: 1/4;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+}
+
+footer .redesSociales {
+    width: 4rem;
+    margin: 0.8rem;
+}
+
+/* Animaciones */
+
+@keyframes aparicion {
+    0% { 
+        opacity: 0;
+    }
+
+    25% { 
+        opacity: 0.25;
+    }
+
+    50% { 
+        opacity: 0.5;
+    }
+
+    75% { 
+        opacity: 0.75;
+    }
+    
+    100% { 
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+
+    /* INDEX */
+
+    .index .indexSeccion1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .index .indexSeccion1 .indexSeccion1Imagen {
+        max-width: 80vw;
+        overflow: hidden;
+        border-radius: 1.5rem;
+    }
+
+    .index .indexSeccion2 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5rem 1fr 1fr 1fr;
+        grid-row-gap: 1.2rem;
+        grid-column-gap: 0rem;
+        width: 80vw;
+        margin-top: 1rem;
+    }
+    
+    .index .indexSeccion2 h2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .index .indexSeccion2 .indexSeccion2Parte1 {
+        grid-column: 1;
+        grid-row: 2;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index .indexSeccion2 .indexSeccion2Parte2 {
+        grid-column: 1;
+        grid-row: 3;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index .indexSeccion2 .indexSeccion2Parte3 {
+        grid-column: 1;
+        grid-row: 4;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagenDiv {
+        width: 40vw;
+        height: 25rem;
+    }
+
+    .imagenDiv img {
+        width: auto;
+        height: 100%;
+    }
+
+    .index .indexSeccion2 p {
+        margin-top: 0rem;
+        padding-left: 1rem;
+        width: 40vw;
+    }
+
+    .index .indexSeccion1 div .carousel {
+        width: 80vw;
+    }
+
+    /* NOSOTROS */
+
+    main.nosotros .nosotrosSeccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img {
+        width: 80vw;
+        overflow: hidden;
+        border-radius: 1.5rem;
+    }
+    
+    .nosotrosSeccion1Img img {
+        min-width: 80vw;
+    }
+    
+    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Texto {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    /* CLIENTES */
+
+    main.clientes .clientesSeccion2 .division1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    main.clientes .clientesSeccion2 .division2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    /* INDEX */
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        margin: 0.5rem 1rem;
+        transform: scale(0.8);
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    footer .redesSociales {
+        width: 2rem;
+        margin: 0.5rem;
+    }
+
+    body {
+        grid-template-rows: 7rem 1fr 4rem;
+    }
+
+    .index .indexSeccion2 {
+        grid-template-rows: 8rem 1fr 1fr 1fr;
+        grid-row-gap: 1.5rem;
+    }
+
+    .index .indexSeccion2 .indexSeccion2Parte1 {
+        flex-direction: column;
+    }
+
+    .index .indexSeccion2 .indexSeccion2Parte2 {
+        flex-direction: column;
+    }
+
+    .index .indexSeccion2 .indexSeccion2Parte3 {
+        flex-direction: column;
+    }
+
+    .imagenDiv {
+        width: 80vw;
+        border-radius: 1.5rem;
+    }
+
+    .index .indexSeccion2 p {
+        padding-left: 0rem;
+        margin-top: 0.5rem;
+        width: 80vw;
+    }
+
+    .index .indexSeccion1 div .carousel {
+        width: 80vw;
+    }
+
+    /* PRODUCTOS */
+
+    main.productos .productosSeccion1 {
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    main.productos .productosSeccion1 img {
+        grid-column: 2;
+        grid-row: 1/3;
+        max-width: 80vw;
+        align-self: center;
+    }
+
+    main.productos .productosSeccion2 .tarjetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    main.productos .productosSeccion2 .tarjetas .card {
+        width: 80vw;
+    }
+
+    /* CONTACTO */
+
+    main.contacto {
+        display: flex;
+        justify-items: center;
+    }
+    
+    main.contacto .contactoSeccion2 {
+        width: 80vw;
+    }
+}
+
