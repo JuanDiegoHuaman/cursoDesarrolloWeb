@@ -132,7 +132,6 @@ main {
     grid-column: 1;
     grid-row: 1/4;
     overflow: hidden;
-    border-radius: 1.5rem;
 }
 
 .index .indexSeccion1 div.indexSeccion1Texto {
@@ -182,7 +181,6 @@ main {
 .imagenDiv {
     height: 50%;
     overflow: hidden;
-    border-radius: 1.5rem;
 }
 
 .index .indexSeccion2 .indexSeccion2Parte1 {
