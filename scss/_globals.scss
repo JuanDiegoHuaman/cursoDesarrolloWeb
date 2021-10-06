@@ -61,3 +61,18 @@ main {
     flex-direction: column;
     animation: aparicion 0.5s linear;
 }
+
+@media only screen and (max-width: 320px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    body {
+        grid-template-rows: 7rem 1fr 4rem;
+    }
+}

@@ -176,3 +176,41 @@
         }
     }
 }
+
+@media only screen and (max-width: 320px) {
+
+    .index {
+
+        .indexSeccion1 div .carousel {
+            width: 80vw;
+        }
+
+        .indexSeccion2 {
+            grid-template-rows: 8rem 1fr 1fr 1fr;
+            grid-row-gap: 1.5rem;
+
+            .indexSeccion2Parte1 {
+                flex-direction: column;
+            }
+
+            .indexSeccion2Parte2 {
+                flex-direction: column;
+            }
+
+            .indexSeccion2Parte3 {
+                flex-direction: column;
+            }
+
+            p {
+                padding-left: 0rem;
+                margin-top: 0.5rem;
+                width: 80vw;
+            }
+        }
+    }
+    
+    .imagenDiv {
+        width: 80vw;
+        border-radius: 1.5rem;
+    }
+}
