@@ -301,8 +301,8 @@ main.nosotros .nosotrosSeccion2 {
     main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img {
       width: 80vw;
       overflow: hidden; }
-    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img img {
-      min-width: 80vw; }
+      main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img img {
+        min-width: 80vw; }
     main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Texto {
       width: 80vw;
       display: flex;

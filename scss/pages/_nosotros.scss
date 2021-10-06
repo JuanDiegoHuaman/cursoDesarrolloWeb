@@ -69,10 +69,10 @@ main.nosotros {
             .nosotrosSeccion1Img {
                 width: 80vw;
                 overflow: hidden;
-            }
 
-            .nosotrosSeccion1Img img {
-                min-width: 80vw;
+                img {
+                    min-width: 80vw;
+                }
             }
 
             .nosotrosSeccion1Texto {
