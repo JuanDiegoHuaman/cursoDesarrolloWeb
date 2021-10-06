@@ -57,6 +57,20 @@ main {
   animation: aparicion 0.5s linear; }
 
 /* PARTIALS */
+/* --FOOTER-- */
+footer {
+  background-color: rgba(215, 216, 216, 0.377);
+  grid-column: 1/4;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw; }
+  footer .redesSociales {
+    width: 4rem;
+    margin: 0.8rem; }
+
 /* --HEADER-- */
 header {
   width: 100vw;
@@ -155,5 +169,40 @@ header {
 .imagenDiv {
   height: 50%;
   overflow: hidden; }
+
+/* --NOSOTROS-- */
+main.nosotros .nosotrosSeccion1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Texto {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; }
+  main.nosotros .nosotrosSeccion1 h2 {
+    text-align: center; }
+  main.nosotros .nosotrosSeccion1 p {
+    margin-top: 1rem; }
+  main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img {
+    width: 40vw;
+    overflow: hidden; }
+    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img img {
+      min-width: 40vw; }
+
+main.nosotros .nosotrosSeccion2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem; }
+  main.nosotros .nosotrosSeccion2 .nosotrosSeccion2Img {
+    width: 80vw;
+    height: 50vh;
+    overflow: hidden; }
+  main.nosotros .nosotrosSeccion2 .nosotrosSeccion2Texto {
+    margin-top: 1.5rem; }
+  main.nosotros .nosotrosSeccion2Texto h2 {
+    text-align: center; }
+  main.nosotros .nosotrosSeccion2Img img {
+    min-width: 100%; }
 
 /* --CONTACTO-- */
