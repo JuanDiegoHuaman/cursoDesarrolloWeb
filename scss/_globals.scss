@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 8rem 1fr 7rem;
+    grid-row-gap: 1.5rem;
+}
+
+h2 {
+    font-size: 3.5rem !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500 !important;
+    color: #273E56 !important;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+label {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+}
+
+address {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Share Tech', sans-serif;
+    color: #3C474B;
+    text-align: justify;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.imagen {
+    width: 50rem;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    animation: aparicion 0.5s linear;
+}
