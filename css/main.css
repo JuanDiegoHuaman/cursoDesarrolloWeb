@@ -30,115 +30,10 @@
 
     /* INDEX */
 
-    .index .indexSeccion1 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .index .indexSeccion1 .indexSeccion1Imagen {
-        max-width: 80vw;
-        overflow: hidden;
-        border-radius: 1.5rem;
-    }
-
-    .index .indexSeccion2 {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 5rem 1fr 1fr 1fr;
-        grid-row-gap: 1.2rem;
-        grid-column-gap: 0rem;
-        width: 80vw;
-        margin-top: 1rem;
-    }
-    
-    .index .indexSeccion2 h2 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    .index .indexSeccion2 .indexSeccion2Parte1 {
-        grid-column: 1;
-        grid-row: 2;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .index .indexSeccion2 .indexSeccion2Parte2 {
-        grid-column: 1;
-        grid-row: 3;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .index .indexSeccion2 .indexSeccion2Parte3 {
-        grid-column: 1;
-        grid-row: 4;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .imagenDiv {
-        width: 40vw;
-        height: 25rem;
-    }
-
-    .imagenDiv img {
-        width: auto;
-        height: 100%;
-    }
-
-    .index .indexSeccion2 p {
-        margin-top: 0rem;
-        padding-left: 1rem;
-        width: 40vw;
-    }
-
-    .index .indexSeccion1 div .carousel {
-        width: 80vw;
-    }
-
     /* NOSOTROS */
 
-    main.nosotros .nosotrosSeccion1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Img {
-        width: 80vw;
-        overflow: hidden;
-        border-radius: 1.5rem;
-    }
-    
-    .nosotrosSeccion1Img img {
-        min-width: 80vw;
-    }
-    
-    main.nosotros .nosotrosSeccion1 .nosotrosSeccion1Texto {
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-        padding-left: 1rem;
-    }
-
     /* CLIENTES */
-
-    main.clientes .clientesSeccion2 .division1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    main.clientes .clientesSeccion2 .division2 {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 2rem;
-    }
+    
 }
 
 @media only screen and (max-width: 320px) {
@@ -241,4 +136,3 @@
         width: 80vw;
     }
 }
-
