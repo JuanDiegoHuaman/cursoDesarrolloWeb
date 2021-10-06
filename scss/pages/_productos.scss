@@ -1,0 +1,62 @@
+/* --PRODUCTOS-- */
+
+main.productos {
+
+    .productosSeccion1 {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: auto 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        overflow: hidden;
+
+        h2 {
+            grid-column: 1/3;
+            grid-row: 1;
+            justify-self: center;
+        }
+
+        p {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        img {
+            grid-column: 2;
+            grid-row: 2;
+            max-width: 40vw;
+            align-self: center;
+        }
+    }
+
+    .productosSeccion2 {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .tarjetas {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            .card {
+                width: 39.5vw;
+            }
+
+            h5 {
+                font-size: 2rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                color: #273E56;
+            }
+
+            li {
+                font-size: 1.5rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+}

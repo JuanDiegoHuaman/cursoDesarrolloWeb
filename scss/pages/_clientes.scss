@@ -1,0 +1,44 @@
+/* --CLIENTES-- */
+
+main.clientes {
+
+    .clientesSeccion1 {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-width: 80vw;
+        }
+    }
+
+    .clientesSeccion2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
+
+        .division1 {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                margin-left: 1rem;
+            }
+        }
+
+        .division2 {
+            display: flex;
+            flex-direction: row;
+            padding-top: 1rem;
+
+            p {
+                margin-right: 1rem;
+            }
+        }
+
+        img {
+            max-width: 40vw;
+        }
+    }
+}
