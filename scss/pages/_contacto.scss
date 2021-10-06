@@ -18,9 +18,9 @@ main.contacto {
         width: 40vw;
 
         form div label {
-            font-size: 1.8rem;
-            font-family: 'Share Tech', sans-serif;
-            color: #3C474B;
+            font-size: $cuerpoSize;
+            font-family: $fuenteCuerpo;
+            color: $colorCuerpo;
         }
     }
 }

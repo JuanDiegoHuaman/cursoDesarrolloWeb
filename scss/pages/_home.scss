@@ -27,17 +27,17 @@
 
             h2 {
                 text-align: center;
-                font-size: 3.5rem;
-                font-family: 'Oswald', sans-serif;
+                font-size: $tituloSize;
+                font-family: $fuenteTitulo;
                 font-weight: 500;
-                color: #273E56;
+                color: $colorTitulo;
             }
 
             p {
                 margin: 1.5rem 1rem;
-                font-size: 1.8rem;
-                font-family: 'Share Tech', sans-serif;
-                color: #3C474B;
+                font-size: $cuerpoSize;
+                font-family: $fuenteCuerpo;
+                color: $colorCuerpo;
                 text-align: justify;
             }
         }
@@ -56,10 +56,10 @@
             grid-column: 1/4;
             grid-row: 1;
             text-align: center;
-            font-size: 3.5rem;
-            font-family: 'Oswald', sans-serif;
+            font-size: $tituloSize;
+            font-family: $fuenteTitulo;
             font-weight: 500;
-            color: #273E56;
+            color:$colorTitulo;
         
         }
 
@@ -73,9 +73,9 @@
 
         p {
             margin-top: 2rem;
-            font-size: 1.8rem;
-            font-family: 'Share Tech', sans-serif;
-            color: #3C474B;
+            font-size: $cuerpoSize;
+            font-family: $fuenteCuerpo;
+            color: $colorCuerpo;
             text-align: justify;
         }
 
