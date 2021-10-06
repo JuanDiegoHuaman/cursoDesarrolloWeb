@@ -26,48 +26,6 @@ body {
 
 /* Estilos para el header */
 
-header {
-    width: 100vw;
-    grid-column: 1/4;
-    grid-row: 1;
-}
-
-header .logo {
-    height: 5rem;
-    margin: 1rem 5rem;
-    transition: 0.3s;
-}
-
-header .logo:hover {
-    opacity: 0.6;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #162521;
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    transition: 0.3s;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0.5rem;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header .navbar {
-    font-size: 2rem;
-}
-
-header .navbar-toggler-icon, .navbar-toggler {
-    transform: scale(1.1);
-}
-
 /* Estilos para el main */
 
 h2 {
